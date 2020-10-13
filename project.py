@@ -96,7 +96,9 @@ nltk.download('stopwords')
 # extra words not to be included in unigram model
 myStopWords = ['media','omitted','ggwp','gntc',
                    'kya','ttyl','kkrh','han','hai','deleted','message',
-                   'mai','nhi','nii','tum','bye','tha','rha','aur','mai','bhi','kunal','farmah','mea','nhn']
+                   'mai','nhi','nii','tum','bye','tha','rha','aur','mai','bhi','kunal','farmah','mea','nhn'
+                   ,'pagal','bro','mujhe','mene','mera','tera','teri','gya','diya','kiya','fir','abhi','chl','pta',
+                   'abe','hota','yep','nope','thi''mere','mujhe','mujhse','mine','hua']
 Stopwords = stopwords.words('English')
 for word in myStopWords:
     Stopwords.append(word)
@@ -128,6 +130,23 @@ def removeStopwords(df,outFileName):
 
     return word_tokens_without_stopwords
 
+
+def prepare(df,outFileName):
+    wordsList = []
+    for words in df['Message_Only_Text']:
+        for word in words.split():
+            wordsList.append(word)
+            
+                
+
+    
+    # storing list of keywords
+    f = open(outFileName,'w')
+    f.write(str(wordsList))
+    f.close()
+
+    return wordsList
+
 # counting all keywords (unigrams)
 def countKeyWords(wordslist):
     keywords = {}
@@ -147,10 +166,18 @@ def countKeyWords(wordslist):
 def countBigrams(wordslist):
     bigrams = {}
     n = len(wordslist)
-    removeList = ['fcomma args','arg fcomma', 'long int' , 'args arg', 'missed voice' , 'voice call' , 'media deleted' ,'include bitsstdch']
+    removeList = ['fcomma', 'long int' , 'missed voice' , 'voice call' , 'media' ,'deleted',
+                  'deleted','this message','http','cbsenic', 'cbseresult','arg','com','attatched', 'onedrive',
+                  'include', 'bits','disassembler','rotations','differ', 
+                  'voice','cbseresultsnicin','hmsvcf','ra he','ni he','he bhai','pagal','omitted']
     for i in range(0,n-1):
         bigram = wordslist[i]+' '+wordslist[i+1]
-        if bigram in removeList:
+        skip = False
+        for val in removeList:  
+            if bigram in removeList or operator.contains(bigram,val):
+                skip=True
+                break
+        if skip:
             continue
         if bigram in bigrams.keys():
             print(bigram)
@@ -171,13 +198,11 @@ def countBigrams(wordslist):
 def countTrigrams(wordslist):
     trigrams = {}
     n = len(wordslist)
-    removeList = ['cbseresultsnicin for cbse', 'results check cbsenicin', 'cbsenicin cbseresultsnicin for',
-                    'check cbsenicin cbseresultsnicin','hmsvcf file attached', 'monica mam hmsvcf', 'cbsenic', 'cbseresult'
-                    'mam hmsvcf file','missed voice call','fcomma','http','arg','com','attatched', 'onedrive', 'psychthrillersupernatural'
-                    ,'include', 'bits','disassembler','rotations','differ','long int', 'int','fcomma args','arg fcomma', 'long int' , 
-                    'args arg', 'missed voice' , 'voice call' , 'media deleted' ,'include bitsstdch',
-                    'functionsnamesstringsmemory','aimtheorycodeoutputinferencelearning','cbseresultsnicin'
-                    ,'sday','nday','iday','rday','hmsvcf']
+    removeList = ['fcomma', 'long int' , 'missed voice' , 'voice call' , 'media' ,'deleted',
+                  'deleted','this message','http','cbsenic', 'cbseresult','arg','com','attatched', 'onedrive',
+                  'include', 'bits','disassembler','rotations','differ', 
+                  'voice','cbseresultsnicin','hmsvcf','ra he','ni he','he bhai','pagal','omitted'
+                   'monica mam hmsvcf', 'cbsenic', 'cbseresult','mam hmsvcf file','missed voice call']
                     
     for i in range(0,n-2):
         trigram = wordslist[i]+' '+wordslist[i+1]+' '+wordslist[i+2]
@@ -1042,11 +1067,11 @@ clgdf5 = preprocess_data_ngram(clgdf5)
 """ High School """
 
 
-bigramsHs1 = removeStopwords(hsdf1, 'KUNAL_FARMAH_2K17_IT_61_BigramsRemoved_High_School_1.txt')
-bigramsHs2 = removeStopwords(hsdf2, 'KUNAL_FARMAH_2K17_IT_61_BigramsRemoved_High_School_2.txt')
-bigramsHs3 = removeStopwords(hsdf3, 'KUNAL_FARMAH_2K17_IT_61_BigramsRemoved_High_School_3.txt')
-bigramsHs4 = removeStopwords(hsdf4, 'KUNAL_FARMAH_2K17_IT_61_BigramsRemoved_High_School_4.txt')
-bigramsHs5 = removeStopwords(hsdf5, 'KUNAL_FARMAH_2K17_IT_61_BigramsRemoved_High_School_5.txt')
+bigramsHs1 = prepare(hsdf1, 'KUNAL_FARMAH_2K17_IT_61_BigramsRemoved_High_School_1.txt')
+bigramsHs2 = prepare(hsdf2, 'KUNAL_FARMAH_2K17_IT_61_BigramsRemoved_High_School_2.txt')
+bigramsHs3 = prepare(hsdf3, 'KUNAL_FARMAH_2K17_IT_61_BigramsRemoved_High_School_3.txt')
+bigramsHs4 = prepare(hsdf4, 'KUNAL_FARMAH_2K17_IT_61_BigramsRemoved_High_School_4.txt')
+bigramsHs5 = prepare(hsdf5, 'KUNAL_FARMAH_2K17_IT_61_BigramsRemoved_High_School_5.txt')
 
 bigramsHs1=countBigrams(bigramsHs1)
 bigramsHs2=countBigrams(bigramsHs2)
@@ -1149,11 +1174,11 @@ for row in TFIDF_HS_Bigram:
 """ College """
 
 
-bigramsClg1 = removeStopwords(clgdf1, 'KUNAL_FARMAH_2K17_IT_61_BigramsRemoved_College_1.txt')
-bigramsClg2 = removeStopwords(clgdf2, 'KUNAL_FARMAH_2K17_IT_61_BigramsRemoved_College_2.txt')
-bigramsClg3 = removeStopwords(clgdf3, 'KUNAL_FARMAH_2K17_IT_61_BigramsRemoved_College_3.txt')
-bigramsClg4 = removeStopwords(clgdf4, 'KUNAL_FARMAH_2K17_IT_61_BigramsRemoved_College_4.txt')
-bigramsClg5 = removeStopwords(clgdf5, 'KUNAL_FARMAH_2K17_IT_61_BigramsRemoved_College_5.txt')
+bigramsClg1 = prepare(clgdf1, 'KUNAL_FARMAH_2K17_IT_61_BigramsRemoved_College_1.txt')
+bigramsClg2 = prepare(clgdf2, 'KUNAL_FARMAH_2K17_IT_61_BigramsRemoved_College_2.txt')
+bigramsClg3 = prepare(clgdf3, 'KUNAL_FARMAH_2K17_IT_61_BigramsRemoved_College_3.txt')
+bigramsClg4 = prepare(clgdf4, 'KUNAL_FARMAH_2K17_IT_61_BigramsRemoved_College_4.txt')
+bigramsClg5 = prepare(clgdf5, 'KUNAL_FARMAH_2K17_IT_61_BigramsRemoved_College_5.txt')
 
 bigramsClg1=countBigrams(bigramsClg1)
 bigramsClg2=countBigrams(bigramsClg2)
@@ -1532,11 +1557,11 @@ clgdf5 = preprocess_data_ngram(clgdf5)
 """ High School """
 
 
-trigramsHs1 = removeStopwords(hsdf1, 'KUNAL_FARMAH_2K17_IT_61_TrigramsRemoved_High_School_1.txt')
-trigramsHs2 = removeStopwords(hsdf2, 'KUNAL_FARMAH_2K17_IT_61_TrigramsRemoved_High_School_2.txt')
-trigramsHs3 = removeStopwords(hsdf3, 'KUNAL_FARMAH_2K17_IT_61_TrigramsRemoved_High_School_3.txt')
-trigramsHs4 = removeStopwords(hsdf4, 'KUNAL_FARMAH_2K17_IT_61_TrigramsRemoved_High_School_4.txt')
-trigramsHs5 = removeStopwords(hsdf5, 'KUNAL_FARMAH_2K17_IT_61_TrigramsRemoved_High_School_5.txt')
+trigramsHs1 = prepare(hsdf1, 'KUNAL_FARMAH_2K17_IT_61_TrigramsRemoved_High_School_1.txt')
+trigramsHs2 = prepare(hsdf2, 'KUNAL_FARMAH_2K17_IT_61_TrigramsRemoved_High_School_2.txt')
+trigramsHs3 = prepare(hsdf3, 'KUNAL_FARMAH_2K17_IT_61_TrigramsRemoved_High_School_3.txt')
+trigramsHs4 = prepare(hsdf4, 'KUNAL_FARMAH_2K17_IT_61_TrigramsRemoved_High_School_4.txt')
+trigramsHs5 = prepare(hsdf5, 'KUNAL_FARMAH_2K17_IT_61_TrigramsRemoved_High_School_5.txt')
 
 trigramsHs1=countTrigrams(trigramsHs1)
 trigramsHs2=countTrigrams(trigramsHs2)
@@ -1642,11 +1667,11 @@ for row in TFIDF_HS_Trigram:
 """ College """
 
 
-trigramsClg1 = removeStopwords(clgdf1, 'KUNAL_FARMAH_2K17_IT_61_TrigramsRemoved_College_1.txt')
-trigramsClg2 = removeStopwords(clgdf2, 'KUNAL_FARMAH_2K17_IT_61_TrigramsRemoved_College_2.txt')
-trigramsClg3 = removeStopwords(clgdf3, 'KUNAL_FARMAH_2K17_IT_61_TrigramsRemoved_College_3.txt')
-trigramsClg4 = removeStopwords(clgdf4, 'KUNAL_FARMAH_2K17_IT_61_TrigramsRemoved_College_4.txt')
-trigramsClg5 = removeStopwords(clgdf5, 'KUNAL_FARMAH_2K17_IT_61_TrigramsRemoved_College_5.txt')
+trigramsClg1 = prepare(clgdf1, 'KUNAL_FARMAH_2K17_IT_61_TrigramsRemoved_College_1.txt')
+trigramsClg2 = prepare(clgdf2, 'KUNAL_FARMAH_2K17_IT_61_TrigramsRemoved_College_2.txt')
+trigramsClg3 = prepare(clgdf3, 'KUNAL_FARMAH_2K17_IT_61_TrigramsRemoved_College_3.txt')
+trigramsClg4 = prepare(clgdf4, 'KUNAL_FARMAH_2K17_IT_61_TrigramsRemoved_College_4.txt')
+trigramsClg5 = prepare(clgdf5, 'KUNAL_FARMAH_2K17_IT_61_TrigramsRemoved_College_5.txt')
 
 trigramsClg1=countTrigrams(trigramsClg1)
 trigramsClg2=countTrigrams(trigramsClg2)
