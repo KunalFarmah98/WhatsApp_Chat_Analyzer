@@ -912,7 +912,6 @@ bhejo
 bhejta
 bheju
 bhejuga
-bhenchod
 bhga
 bhgake
 bhgaye
@@ -922,7 +921,6 @@ bhijwade
 bhijwayga
 bhit
 bhk
-bhkbcmc
 bhla
 bho
 bhookha
@@ -1620,7 +1618,6 @@ chupke
 chutti
 chuttiya
 chuttiyo
-chutuya
 cid
 cidr
 cin
@@ -3165,7 +3162,6 @@ gamla
 gamor
 gamora
 gana
-gand
 ganda
 gande
 gandhe
@@ -4083,7 +4079,6 @@ iron
 ironheart
 ironman
 ironman's
-ironmanchutiyasala
 ironwoman
 irony
 irreplacable
@@ -4633,6 +4628,7 @@ konse
 konsi
 kooc
 kood
+kooda
 koodne
 korea
 korean
@@ -5339,8 +5335,6 @@ mcha
 mchahya
 mchaiye
 mchaya
-mcio
-mciyo
 mcq
 mcqs
 mcu
@@ -6028,6 +6022,7 @@ packet
 packets
 pad
 padh
+pagalo
 pagalpagal
 pagalpan
 page
@@ -8304,7 +8299,6 @@ tle
 tnp
 tobtayio
 toc
-tochutiyakouthasalasorahe
 tocmeekabsandgone
 tod
 today
@@ -9020,7 +9014,6 @@ yify
 yipee
 yippe
 yji
-ymkbmc
 yogesh
 yorker
 yorkers
