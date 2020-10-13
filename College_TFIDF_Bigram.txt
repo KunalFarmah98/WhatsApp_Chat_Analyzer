@@ -1,0 +1,15 @@
+		0  	1  	2  	3  	4  	5  	6  	7  	8  	9  	10  	11  	12  	13  	14  	15  	16  	17  	18  	19  	20  	21  	22  	23  	24  	25  	26  	27  	28  	29  	30  	31  	32  	33  	34  	35  	36  	37  	38  	39  	40  	41  	42  	43  	44  	45  	46  	47  	
+
+Document 1  	26.052 	19.922 	56.33 	16.857 	7.141 	49.893 	28.405 	14.303 	13.281 	12.26 	10.079 	11.749 	0 	0 	2.008 	1.562 	0 	0.0 	0 	0.893 	0 	3.576 	0 	2.554 	0 	0 	3.065 	4.581 	2.749 	0.669 	3.065 	4.581 	0 	0 	0.916 	0 	2.043 	0 	0.916 	1.833 	0 	0 	11.749 	0 	0 	0.893 	0 	0 	
+
+Document 2  	16.857 	0.511 	0 	3.065 	0.446 	0 	3.665 	4.597 	2.043 	1.022 	20.158 	8.173 	13.744 	20.923 	2.901 	2.901 	19.313 	0.0 	17.704 	1.116 	0 	2.043 	0 	0.511 	0 	5.498 	0.511 	0 	0 	0.223 	0 	0 	0 	0 	0 	0 	5.108 	0 	0 	0 	0 	4.581 	1.532 	0 	0.916 	0.893 	0 	0 	
+
+Document 3  	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	1.833 	0 	0.893 	0.223 	0 	0.0 	0 	1.339 	8.047 	2.554 	8.047 	2.554 	6.438 	3.665 	2.043 	2.749 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	
+
+Document 4  	1.022 	0.511 	0 	0.511 	0.223 	0 	0 	1.022 	0 	0 	0 	2.043 	0 	0 	0.223 	0.223 	0 	0.0 	0 	0.223 	0 	0 	0 	0 	0 	0 	0 	0 	10.079 	1.339 	3.065 	5.498 	9.657 	8.047 	4.581 	8.047 	2.554 	8.047 	0 	0 	0 	0 	0 	0 	0 	0.446 	0 	0 	
+
+Document 5  	0 	0 	0 	0 	0.446 	0 	0 	0 	0.511 	0.511 	0 	0 	0 	0 	0 	0 	0 	0.0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0.223 	0.511 	0 	0 	0 	0 	0 	0 	0 	2.749 	2.749 	4.828 	2.749 	1.532 	4.828 	2.749 	0.669 	4.828 	3.219 	
+
+
+
+Keywords (in order):kar raha, iron man, merko toh, dont know, abhi tak, kuchh nahi, toh nahi, nahi pata, nahi toh, abhi toh, kar liya, nahi raha, aukat bahar, assignment kar, copy paste, bhej diyo, group par, bta diyo, bitsstdch include, krke dekh, thanku bhai, last year, apply kia, try kar, dbms file, code bhej, use kiya, gate smashers, bhai bari, jump scares, pooch liyo, mam pooch, bat ayiyo, mushfiqur rahim, wale pooch, haan bhai, nahi bhai, puch raha, bhai dhruv, dhruv bol, mein nahi, nahi yaar, nahi aaya, thi yaar, sun bhai, koi nahi, acha sun, continuous evaluation, 
