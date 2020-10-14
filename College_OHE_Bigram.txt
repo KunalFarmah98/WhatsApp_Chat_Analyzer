@@ -4,9 +4,9 @@ Document 1	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1
 
 Document 2	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	0  	1  	1  	0  	1  	1  	0  	0  	0  	
 
-Document 3	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	0  	0  	1  	
+Document 3	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	0  	1  	1  	
 
-Document 4	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	0  	0  	1  	
+Document 4	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	0  	1  	1  	
 
 Document 5	1  	1  	1  	1  	1  	1  	1  	0  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	1  	0  	1  	0  	0  	1  	1  	1  	1  	1  	
 
@@ -14,4 +14,4 @@ Document 6
 
 
 
-Keywords (in order):he na, ke liye, me to, ra hu, he to, bhi ni, he and, ha to, he ye, koi ni, ek bari, he wo, skta he, re he, kiya he, ra tha, kr ra, hota he, aa ra, se pooch, ni to, pooch le, bhai ek, gp pe, he kya, he was, dhruv ko, ko bol, 
+Keywords (in order):he na, ke liye, me to, ra hu, he to, bhi ni, he and, ha to, koi ni, he ye, ek bari, he wo, skta he, re he, kiya he, ra tha, kr ra, hota he, aa ra, se pooch, ni to, pooch le, bhai ek, gp pe, he kya, he was, ko bol, u r, 
