@@ -10,8 +10,6 @@ Document 4	1  	0  	0  	0  	1  	0  	1  	0  	1  	0  	1  	0  	0  	1  	0  	0  	0  	0
 
 Document 5	1  	1  	0  	0  	0  	0  	0  	0  	0  	0  	0  	0  	0  	0  	0  	0  	0  	0  	0  	0  	1  	1  	0  	1  	0  	0  	0  	0  	0  	0  	0  	0  	0  	0  	0  	0  	1  	1  	1  	1  	1  	1  	1  	1  	1  	
 
-Document 6	
-
 
 
 Keywords (in order):kr ra hu, ni aa ra, first day first, day first show, ho skta he, chl ri he, ki baat kr, aa gya to, aa ri he, baat kr ra, kr skta he, ek bari code, pooch ra hu, kr skte he, aa ra tha, infinite recursion kyu, convert krna he, worth ke bahar, verify kr diyo, ni ho ra, all the best, kya hota he, ki worth ni, kr ra tha, mene bhi yhi, kr diya mene, bhai ek bari, mam se pooch, se pooch le, wale se pooch, bat le ayiyo, bs ki ni, title change kr, se pooch liyo, ek bari pooch, bari pooch le, he was evil, eco ka syllabus, there all along, chaap skte the, was there all, dikha dete me, krne ko bola, there was no, he was there, 

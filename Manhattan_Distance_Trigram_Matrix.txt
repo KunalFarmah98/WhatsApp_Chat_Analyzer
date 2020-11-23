@@ -6,4 +6,4 @@ Collge Chat 4 :	75.00643405545595	74.72343493090857	67.80986819064225	57.7726206
 Collge Chat 5 :	49.25735556732035	50.31321775065822	49.95711380659468	46.740992818820864	21.049841793108452	
 
 
-The College Chat Document - 1 is farthest to the High School Chat Document - 4 with a manhattan distance of 123.3449400770472
+The College Chat Document - 1 and the High School Chat Document - 4 are the fartest to each other with a manhattan distance of 123.3449400770472

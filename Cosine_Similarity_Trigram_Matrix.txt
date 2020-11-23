@@ -6,4 +6,4 @@ Collge Chat 4 :	0.024229450955557265	0.06922802973304765	0.2921784768788692	0.52
 Collge Chat 5 :	0.010257392410852276	0.0			0.049300873036074645	0.3495664013936485	0.5900772976768756	
 
 
-The College Chat Document - 2 is closest to the High School Chat Document - 2 with a cosine similarity of 0.7743168438637518
+The College Chat Document - 2 and the High School Chat Document - 2 are the closest with a cosine similarity of 0.7743168438637518
